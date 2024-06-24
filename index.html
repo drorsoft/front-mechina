@@ -4,6 +4,21 @@
 הוא מורכב מתגיות שונות
 
          -->
+    <style>
+        .father {
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .child {
+            background-color: red;
+        }
+
+        .image {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 
     <body style="background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);padding: 2rem; direction: rtl;">
         <!-- 
@@ -12,7 +27,7 @@ h1
 הוא כותרת ראשית
 
          -->
-        <h1>
+        <h1 style="font-size: 70px;">
             דף אינטרנט
         </h1>
 
@@ -21,13 +36,23 @@ h1
         <p style="color: black;">
             כמו פסקאות
         </p>
+        <div class="father">
+            אבא
+            <div class="child">
+                ילד
+            </div>
+        </div>
+
+
         <button>
             כפתור כלשהו
         </button>
         <p>
             וכמובן תמונות
         </p>
-        <img src="https://www.w3schools.com/html/pic_trulli.jpg">
+        <img class="image" src="https://www.w3schools.com/html/pic_trulli.jpg">
+        <img class="image" src="https://www.freeiconspng.com/thumbs/facebook-love-png/blank-heart-love-hd-png-28.png">
+        <img class="image" src="https://www.w3schools.com/html/pic_trulli.jpg">
 
     </body>
 
