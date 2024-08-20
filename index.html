@@ -5,7 +5,29 @@
 
          -->
 
-    <body style="background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);padding: 2rem; direction: rtl;">
+    <head>
+        <style>
+            .container {
+                width: 600px;
+                padding: 30px;
+                background-color: #02417f;
+                position: relative;
+            }
+
+            .child {
+                position: fixed;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgb(233, 91, 91);
+                width: 400px;
+                height: 50px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+    <body
+        style="height: 2000px; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);padding: 2rem; direction: rtl;">
         <!-- 
 למשל 
 h1
@@ -15,19 +37,10 @@ h1
         <h1>
             דף אינטרנט
         </h1>
+        <div class="container">
+            <div class="child"> Child</div>
+        </div>
 
-        בדף אינטרנט יכולים להיות כל מני דברים
-
-        <p style="color: black;">
-            כמו פסקאות
-        </p>
-        <button>
-            כפתור כלשהו
-        </button>
-        <p>
-            וכמובן תמונות
-        </p>
-        <img src="https://www.w3schools.com/html/pic_trulli.jpg">
 
     </body>
 
