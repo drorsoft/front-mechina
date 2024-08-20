@@ -4,43 +4,59 @@
 הוא מורכב מתגיות שונות
 
          -->
+    <style>
+        .father {
+            background-color: blue;
+            padding: 10px;
+        }
 
-    <head>
-        <style>
-            .container {
-                width: 600px;
-                padding: 30px;
-                background-color: #02417f;
-                position: relative;
-            }
+        .child {
+            background-color: red;
+        }
 
-            .child {
-                position: fixed;
-                right: 0px;
-                bottom: 0px;
-                background-color: rgb(233, 91, 91);
-                width: 400px;
-                height: 50px;
-                padding: 20px;
-            }
-        </style>
-    </head>
+        .image {
+            width: 150px;
+            height: 150px;
+            border: #043363 5px solid;
+            padding: 10px;
+            background-color: thistle;
+            border-radius: 10px;
+        }
+    </style>
 
-    <body
-        style="height: 2000px; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);padding: 2rem; direction: rtl;">
+    <body style="background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);padding: 2rem; direction: rtl;">
         <!-- 
 למשל 
 h1
 הוא כותרת ראשית
 
          -->
-        <h1>
+        <h1 style="font-size: 70px;">
             דף אינטרנט
         </h1>
-        <div class="container">
-            <div class="child"> Child</div>
-        </div>
 
+        בדף אינטרנט יכולים להיות כל מני דברים
+
+        <p style="color: black;">
+            כמו פסקאות
+        </p>
+        <!-- <div class="father">
+            אבא
+            <div class="child">
+                ילד
+            </div>
+        </div> -->
+
+
+        <button>
+            כפתור כלשהו
+        </button>
+        <p>
+            וכמובן תמונות
+        </p>
+        <img class="image" src="https://www.w3schools.com/html/pic_trulli.jpg">
+        <img class="image" src="https://www.freeiconspng.com/thumbs/facebook-love-png/blank-heart-love-hd-png-28.png">
+        <img class="image" src="https://www.w3schools.com/html/pic_trulli.jpg">
 
     </body>
 
