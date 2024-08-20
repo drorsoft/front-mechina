@@ -7,6 +7,12 @@
 
     <head>
         <style>
+            .site-body {
+                background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+                padding: 2rem;
+                direction: rtl;
+            }
+
             .father {
                 background-color: blue;
                 padding: 10px;
@@ -34,10 +40,23 @@
             };
             const myElement = document.querySelector('.myClass')
 
+            function clickDark() {
+                const element = document.querySelector('.site-body')
+                if (element !== null) {
+                    element.style.background = 'black'
+                }
+            }
+            function clickLight() {
+                const element = document.querySelector('.site-body')
+                if (element !== null) {
+                    element.style.background = 'black'
+                }
+            }
+
         </script>
     </head>
 
-    <body style="background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);padding: 2rem; direction: rtl;">
+    <body class="site-body">
         <!-- 
 למשל 
 h1
