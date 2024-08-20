@@ -18,6 +18,13 @@
                 padding: 10px;
             }
 
+            .number-input {
+                font-size: 30px;
+                padding: 10px;
+                margin: 20px 10px;
+                border-radius: 10px;
+            }
+
             .child {
                 background-color: red;
             }
@@ -39,7 +46,11 @@
                 city: "תל אביב"
             };
             const myElement = document.querySelector('.myClass')
+            function times2() {
+                const inputElement = document.querySelector('.number-input');
+                const value = inputElement.value;
 
+            }
             function clickDark() {
                 const element = document.querySelector('.site-body')
                 if (element !== null) {
@@ -72,6 +83,15 @@ h1
         <p style="color: black;">
             כמו פסקאות
         </p>
+        <div>
+
+            <input type="number" class="number-input" />
+        </div>
+        <div>
+            <button onclick="times2()">
+                תכפיל ב 2
+            </button>
+        </div>
         <!-- <div class="father">
             אבא
             <div class="child">
