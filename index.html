@@ -4,25 +4,38 @@
 הוא מורכב מתגיות שונות
 
          -->
-    <style>
-        .father {
-            background-color: blue;
-            padding: 10px;
-        }
 
-        .child {
-            background-color: red;
-        }
+    <head>
+        <style>
+            .father {
+                background-color: blue;
+                padding: 10px;
+            }
 
-        .image {
-            width: 150px;
-            height: 150px;
-            border: #043363 5px solid;
-            padding: 10px;
-            background-color: thistle;
-            border-radius: 10px;
-        }
-    </style>
+            .child {
+                background-color: red;
+            }
+
+            .image {
+                width: 150px;
+                height: 150px;
+                border: #043363 5px solid;
+                padding: 10px;
+                background-color: thistle;
+                border-radius: 10px;
+            }
+        </style>
+        <script>
+
+            const person = {
+                name: "אביב",
+                age: 30,
+                city: "תל אביב"
+            };
+            const myElement = document.querySelector('.myClass')
+
+        </script>
+    </head>
 
     <body style="background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);padding: 2rem; direction: rtl;">
         <!-- 
@@ -48,8 +61,11 @@ h1
         </div> -->
 
 
-        <button>
-            כפתור כלשהו
+        <button onclick="clickDark()">
+            רקע כהה
+        </button>
+        <button onclick="clickLight()">
+            רקע בהיר
         </button>
         <p>
             וכמובן תמונות
